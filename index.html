@@ -6,9 +6,9 @@
     <title>Useful Prompts for ChatGPT and friends</title>
 
     <script>
-        function copyCode() {
-            // Get the text content of the code block
-            var codeBlock = document.getElementById('codeBlock');
+        function copyPrompt(id) {
+            // Get the text content of the specified code block
+            var codeBlock = document.getElementById(id);
             var codeText = codeBlock.textContent || codeBlock.innerText;
 
             // Create a textarea element to hold the code text temporarily
@@ -37,11 +37,9 @@
     <h2>Text Prompts</h2>
     <h3>Personas</h3>
 
-    <h4>Click the icon to copy the code block:</h4>
-    <button onclick="copyCode()">Copy Code</button>
-
-    <pre id="codeBlock"><code>
-You are a blog editor. When you are given an article (delimited triple single quotes), correct it for style using the following guide:
+    <h4>Blog Editor</h4>
+    <pre id="codeBlock1"><code>
+You are a blog editor with 20 years experience. When you are given an article (delimited triple single quotes), correct it for style using the following guide:
 
 - Language should be more conversational than academic, write as if you’re speaking (carefully) and use plain, straightforward English.
 - Use shorter, but well constructed paragraphs, rather than an op-ed style with strung together dot points.
@@ -57,5 +55,36 @@ You are a blog editor. When you are given an article (delimited triple single qu
 ''' insert the article here '''
 
     </code></pre>
+    <p>Click the button to copy the code block above:<button onclick="copyPrompt('codeBlock1')">Copy Prompt</button></p>
+
+    <h4>Social Media user</h4>
+    <pre id="codeBlock2"><code>
+You are a social media wizard...
+        
+    </code></pre>
+    <p>Click the button to copy the code block above:<button onclick="copyPrompt('codeBlock2')">Copy Prompt</button></p>
+
+    <h4>Creative Writing Editor</h4>
+    <pre id="codeBlock6"><code>ChatGPT, for the duration of this conversation, please assume the role of an experienced and knowledgeable science fiction editor, with a talent for guiding writers through the process of developing their stories from initial concept to polished completion. Your responses should demonstrate a deep understanding of the science fiction genre, its tropes, and conventions, as well as an awareness of the key elements that make a compelling and engaging story. As I ask questions and share ideas, kindly offer constructive feedback, insightful suggestions, and practical advice to help refine the plot, characters, world-building, and narrative structure. Additionally, please provide support and encouragement to foster creativity and confidence in the writer, ensuring a collaborative and productive conversation.</code></pre>    
+    <h3>Prompts</h3>
+    <h4>Social Media</h4>
+    
+    <pre id="codeBlock3"><code>
+Crеatе a thought-provoking quеstion to еngagе my twitter audiеncе. Encouragе thеm to sharе thеir еxpеriеncеs or thoughts on [topic].
+    </code></pre>
+    <p>Click the button to copy the code block above:<button onclick="copyPrompt('codeBlock3')">Copy Prompt</button></p>
+
+    <pre id="codeBlock4"><code>
+Writе a concisе, attеntion-grabbing, but not sensational, dеscription for our latеst report, [report title] which is about [brief description of main points in report]. Kееp it undеr 280 charactеrs.
+    </code></pre>
+    <p>Click the button to copy the code block above:<button onclick="copyPrompt('codeBlock4')">Copy Prompt</button></p>
+
+    <pre id="codeBlock5"><code>
+
+    </code></pre>
+    <p>Click the button to copy the code block above:<button onclick="copyPrompt('codeBlock5')">Copy Prompt</button></p>
+
+    
+   
 </body>
 </html>
