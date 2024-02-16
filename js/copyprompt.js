@@ -19,5 +19,5 @@ function copyPrompt(id) {
     document.body.removeChild(textarea);
 
     // Notify the user that the code has been copied
-    alert('Code copied to clipboard!');
+    alert('Prompt copied to clipboard!');
 }
