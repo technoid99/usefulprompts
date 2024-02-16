@@ -18,6 +18,13 @@ function copyPrompt(id) {
     // Remove the textarea
     document.body.removeChild(textarea);
 
-    // Notify the user that the code has been copied
-    alert('Prompt copied to clipboard!');
+    // Show "- Copied!" next to the button
+    var button = document.querySelector('button[onclick="copyPrompt(\'' + id + '\')"]');
+    button.textContent = "- Copied!";
+
+    // Reset the button text after a few seconds
+    setTimeout(function() {
+        button.textContent = "Copy Prompt";
+    }, 3000); // 3000 milliseconds = 3 seconds
+
 }
