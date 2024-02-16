@@ -20,11 +20,11 @@ function copyPrompt(id) {
 
     // Show "- Copied!" next to the button
     var button = document.querySelector('button[onclick="copyPrompt(\'' + id + '\')"]');
-    button.textContent = "- Copied!";
+    button.textContent = "Copied!";
 
     // Reset the button text after a few seconds
     setTimeout(function() {
         button.textContent = "Copy Prompt";
-    }, 3000); // 3000 milliseconds = 3 seconds
+    }, 2000); // 2000 milliseconds = 2 seconds
 
 }
