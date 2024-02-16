@@ -1,0 +1,23 @@
+.prompt-code {
+    font-family: Consolas, Menlo, "courier new", monospace;
+    font-size: 12px
+    width: auto;
+    background-color: #fff;
+    color: #000;
+    padding: 2px 2px 12px 2px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: normal
+}
+.prompt-box {
+    background-color:#E7E9EB;
+    border-radius:5px;
+    padding:10px 10px 10px 10px;
+    margin:20px 10px;
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
