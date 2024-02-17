@@ -11,6 +11,21 @@
   <h2>Text Prompts</h2>
   
   <h3>Prompts</h3>
+
+  <div class="prompt-box">
+    <h4>Summarising</h4>
+    
+    <div class="prompt-code" id="tldrit">
+      <p>TLDR the following passage delimited by triple single quotes, using only this text.</p>
+      <p>'''<insert text here>'''</p>
+    </div>
+    <button onclick="copyPrompt('tldrit')">Copy Prompt</button>
+
+    <div class="prompt-code" id="oneparasumm">
+      <p>Summarise in one paragraph the following online article below (delimited by triple single quotes).</p>
+    </div>
+    <button onclick="copyPrompt('oneparasumm')">Copy Prompt</button>
+  </div>
   
   <div class="prompt-box">
     <h4>Social Media</h4>
