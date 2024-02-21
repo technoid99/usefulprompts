@@ -34,7 +34,33 @@
       <p>'''insert text here'''</p>
     </div>
     <button onclick="copyPrompt('changetone')">Copy Prompt</button>
+   
+    <div class="prompt-code" id="writing-idea">
+      <p>Generate a compelling idea for a piece of writing exploring [topic]. Consider what angle or perspective would engage readers and offer fresh insights.</p>
+    </div>
+    <button onclick="copyPrompt('writing-idea')">Copy Prompt</button>
+  
+    <div class="prompt-code" id="writing-headline">
+      <p>Create an attention-grabbing headline for an article about [topic]. Make sure it accurately reflects the content and entices readers to delve into the piece.</p>
+    </div>
+    <button onclick="copyPrompt('writing-headline')">Copy Prompt</button>
+  
+    <div class="prompt-code" id="writing-outline">
+      <p>Outline the key points you would cover in an essay on [topic]. Organize the structure to ensure logical progression and clarity for the reader.</p>
+    </div>
+    <button onclick="copyPrompt('writing-outline')">Copy Prompt</button>
+  
+    <div class="prompt-code" id="writing-edit">
+      <p>Suggest grammatical and stylistic edits for the following paragraph: [Insert paragraph here]. Focus on improving clarity, coherence, and overall readability.</p>
+    </div>
+    <button onclick="copyPrompt('writing-edit')">Copy Prompt</button>
+  
+    <div class="prompt-code" id="writing-conciseness">
+      <p>Revise the following passage to improve conciseness and flow while retaining its core message: [Insert passage here]. Eliminate redundancies and unnecessary words.</p>
+    </div>
+    <button onclick="copyPrompt('writing-conciseness')">Copy Prompt</button>
   </div>
+
 
   <div class="prompt-box">
     <h4>Summarising (WARNING: Always check for accuracy)</h4>
@@ -90,11 +116,27 @@
   </div>
 
    <h4>Policy Analyst</h4>
-    <div class="prompt-code" id="persona-blogeditor">
+    <div class="prompt-code" id="persona-policymentor">
       <p>Ignore all previous instructions. Act as a cyber, defence, and national security policy analyst and researcher with 20 years experience. You possess a background in international relations, foreign policy, and expertise in cybersecurity and technology. You prioritise factual accuracy and rigorous analysis. Craft a conversation with this persona, exploring topics such as defence and strategic policy, national security, cyber security, digital identity, cyber warfare, critical technologies, international relations, defence strategy, cyberattacks, and advancements in technology, . Provide insights grounded in empirical evidence and a deep understanding of global politics and emerging technologies. Embrace collaborative dialogue and exchange ideas to navigate the complexities of our interconnected world.</p>    
     </div>
-    <button onclick="copyPrompt('persona-blogeditor')">Copy Prompt</button>
+    <button onclick="copyPrompt('persona-policymentor')">Copy Prompt</button>
   </div>
+
+  <h3>Custom Instructions</h3>
+  <div class="prompt-box">
+    <h4>Follow up questions</h4>
+    <div class="prompt-code" id="followupq">
+      <p>After a response, provide three follow-up questions worded as if I'm asking you. Format in bold as Q1, Q2, Q3. Place two line breaks ("\n") before and after each question for spacing. These questinos should be thought-provoking and dig further into the original topic.</p>
+    </div>
+    <button onclick="copyPrompt('followupq')">Copy Prompt</button>
+    
+    <h4>Editor shortcut</h4>
+    <div class="prompt-code" id="editorshortcut">
+      <p>Crеatе a thought-provoking quеstion to еngagе my twitter audiеncе. Encouragе thеm to sharе thеir еxpеriеncеs or thoughts on [topic].</p>
+    </div>
+    <button onclick="copyPrompt('editorshortcut')">Copy Prompt</button>
+    
+ 
   
 </body>
 </html>
